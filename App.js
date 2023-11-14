@@ -86,6 +86,7 @@ const MinesweeperApp = () => {
   const resetGame = () => {
     setBoard(initializeBoard(rows, cols, mines));
     setRevealed(Array.from({ length: rows }, () => Array(cols).fill(false)));
+    Alert.alert("Reset successful!");
   };
 
   const renderBoard = () => {
